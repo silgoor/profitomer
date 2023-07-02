@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Muller';
+  src: url('Muller-Bold.woff');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Muller';
+  src: url('Muller-Regular.woff');
+}
+*{
+	font-family: 'Muller', sans-serif;
+	color: #404040;
+}
+
+.rotate {
+	height: 16px;
+	width: 16px;
+	animation: rotation 750ms infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.pointer {cursor: pointer;}
+
+.downSymbol:after
+{
+	content: " ▼";
+}
+
+label.custom-upload
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+	display:inline-block;
+	cursor: pointer;
+	background-color:black;
+	border: 2px solid #FFFFFF;
+	text-align: center;
+	color: #ffffff;
+	transition: all 0.3s ease-in-out;
+}
+label.custom-upload {
+    background-color: black;
+	width: 200px;
+	padding: 10px;
+	margin: 5px;
+}
+label.custom-upload input {
+	display: none;
+}
+label.custom-upload:hover
+{
+	background-color:#404040;
+}
